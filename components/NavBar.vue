@@ -1,11 +1,13 @@
 <template>
   <div>
     <nav id="navbar" class="h-20 bg-yellow-900 flex justify-between items-center py-4 px-6 shadow-2xl">
-     <NuxtLink to="/home" class="logo ml-36 pl-2">
-        <h1 class="text-white text-3xl">
+     <NuxtLink to="/home" class="logo ml-32 -mt-3">
+               <img src="~/assets/images/ss-white.png" alt="logo" class="w-48 h-40"/>
+        <!-- <h1 class="text-white text-3xl">
+
           <span class="fname capitalize">SambathSastri</span>
           <span class="fist">&#x1F44A;</span>
-        </h1>
+        </h1> -->
       </NuxtLink>
       <ul class="fixed flex justify-between items-center right-44 font-bold text-yellow-900">
         <li class="nav-item h-10 ml-8 rounded-lg hover:bg-white  bg-yellow-300 text-center pt-2 w-32">
@@ -26,6 +28,7 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
+          <div class="block self-end absolute left-0 bottom-0 border-b-4 w-full"></div>
     </nav>
   </div>
 </template>
@@ -37,6 +40,12 @@
   width: 100%;
   z-index: 1;
 }
+
+/* .logo{
+  background: url('~/assets/images/ss-black.png');
+  width: 50px;
+  height: 50px;
+} */
 </style>
 
 <script>
