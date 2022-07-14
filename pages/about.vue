@@ -1,6 +1,6 @@
 <template>
-  <PageContent>
-    <div class="
+  <PageContent class="container1">
+    <div class="row
         bg-white
         rounded-xl
         shadow-md
@@ -48,6 +48,7 @@
     <br>
     <div
       class="
+      row
         max-w-md
         mx-auto
         bg-white
@@ -98,3 +99,20 @@
     </div>
   </PageContent>
 </template>
+
+<style>
+
+@media all and (max-width: 768px){
+  p {
+    background-color: yellow;
+    color: blue;
+  }
+div.pagecontent {
+    width: 100%;
+    margin-left:0;
+    overflow: hidden;
+    margin-right:50px;
+  }
+
+}
+</style>

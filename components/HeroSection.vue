@@ -1,6 +1,6 @@
 <template>
-    <div>
-    <section class="hero relative top-16">
+  <div>
+    <section class="hero relative top-12">
       <div class="intro-text">
         <h1 class="font-bold">
           <span class="hear"> You can Hear the Jabs </span> <br />
@@ -13,23 +13,35 @@
         <a class="btn red" href="#">Learn More</a>
         <a class="btn blue" href="#">Subscribe</a>
       </div>
-      <div class="i-frame">
+      <div class="i-frame rounded-2xl">
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/sUmM_PFpsvQ"
+          src="https://www.youtube.com/embed/YSVGBZI3QSI"
           title="YouTube video player"
-          frameborder="10"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         ></iframe>
         <div class="stand-1"></div>
         <div class="stand-2"></div>
       </div>
     </section>
-    </div>
+  </div>
 </template>
 
 <style>
+/* CSS Variables */
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #0652dd;
+  --secondary-color: #ea2027;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+
 /* Hero section starts */
 .hero {
   display: flex;
