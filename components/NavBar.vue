@@ -3,110 +3,111 @@
     <nav
       id="navbar"
       class="
-        h-20
-        bg-yellow-900
+        h-36
+        bg-amber-900
         flex
         justify-between
         items-center
         py-4
         px-6
         shadow-2xl
+        navbar-expand-lg
+        sticky
       "
     >
-      <NuxtLink to="/home" class="logo ml-32 -mt-3">
-        <img src="~/assets/images/ss-white.png" alt="logo" class="w-48 h-40" />
+      <NuxtLink to="/home" class="logo ml-32 navbar-brand -mt-64">
+        <img src="~/assets/images/ss-white.png" alt="logo" class="w-80 h-72" />
         <!-- <h1 class="text-white text-3xl">
 
           <span class="fname capitalize">SambathSastri</span>
           <span class="fist">&#x1F44A;</span>
         </h1> -->
       </NuxtLink>
-      <ul
-        class="
-          fixed
-          flex
-          justify-between
-          items-center
-          right-44
-          font-bold
-          text-yellow-900
-        "
-      >
-        <li
+      <span class="navbar-text shadow-2xl opacity-80">&#9742; +91 - 94435 03868 </span>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul
           class="
-            nav-item
-            h-10
-            ml-8
-            rounded-lg
-            hover:bg-white
-            bg-yellow-300
-            text-center
-            pt-2
-            w-32
+            fixed
+            top-0
+            justify-between
+            items-center
+            right-56
+            font-extrabold
+            text-yellow-900
+            navbar-nav
+            mr-auto
+            text-2xl
           "
         >
-          <NuxtLink to="/home" class="block hover:text-blue-400" id="nav-link"
-            >Home</NuxtLink
+          <li
+            class="
+              nav-item
+              ml-8
+              rounded-lg
+              hover:bg-white
+              bg-yellow-300
+              rounded-2xl
+            "
           >
-        </li>
-        <li
-          class="
-            nav-item
-            h-10
-            ml-8
-            rounded-lg
-            hover:bg-white
-            bg-yellow-300
-            text-center
-            pt-2
-            w-32
-          "
-        >
-          <NuxtLink to="/about" class="block hover:text-blue-400" id="nav-link"
-            >About</NuxtLink
+            <NuxtLink
+              to="/home"
+              class="block hover:text-blue-400 nav-link"
+              id="nav-link"
+              >Home</NuxtLink
+            >
+          </li>
+          <li
+            class="
+              nav-item
+              ml-8
+              rounded-lg
+              hover:bg-white
+              bg-yellow-300
+              rounded-2xl
+            "
           >
-        </li>
-        <li
-          class="
-            nav-item
-            h-10
-            ml-8
-            rounded-lg
-            hover:bg-yellow-400
-            bg-yellow-300
-            text-center
-            pt-2
-            w-32
-          "
-        >
-          <NuxtLink to="/services" class="m-4" id="nav-link">Services</NuxtLink>
-        </li>
-        <li
-          class="
-            nav-item
-            h-10
-            ml-8
-            rounded-lg
-            hover:bg-yellow-400
-            bg-yellow-300
-            text-center
-            pt-2
-            w-32
-          "
-        >
-          <a href="#sub" class="m-4" id="nav-link">Subscribe</a>
-        </li>
-      </ul>
-      <div class="topnav">
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" @click="myFunction1()">
-          <i class="fa fa-bars"></i>
-        </a>
+            <NuxtLink
+              to="/about"
+              class="block hover:text-blue-400 nav-link"
+              id="nav-link"
+              >About</NuxtLink
+            >
+          </li>
+          <li
+            class="
+              nav-item
+              ml-8
+              rounded-lg
+              hover:bg-white
+              bg-yellow-300
+              rounded-2xl
+            "
+          >
+            <NuxtLink
+              to="/services"
+              class="block hover:text-blue-400 nav-link"
+              id="nav-link"
+              >Services</NuxtLink
+            >
+          </li>
+          <li
+            class="
+              nav-item
+              ml-8
+              rounded-lg
+              hover:bg-white
+              bg-yellow-300
+              rounded-2xl
+            "
+          >
+            <NuxtLink
+              to="/services"
+              class="block hover:text-blue-400 nav-link"
+              id="nav-link"
+              >Contact</NuxtLink
+            >
+          </li>
+        </ul>
       </div>
     </nav>
   </div>
@@ -125,7 +126,7 @@
   width: 50px;
   height: 50px;
 } */
-@media all and (max-width: 1100px) {
+/* @media all and (max-width: 1100px) {
   #navbar .nav-item {
     display: none;
   }
@@ -134,48 +135,35 @@
     margin: auto;
     margin-top: -3.5rem;
   }
-}
-
-/* Style the navigation menu */
-.topnav {
-  background-color: #333;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  position: inherit;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+} */
 
 /* Style the active link (or home/logo) */
 .active {
   background-color: #04aa6d;
   color: white;
+}
+
+.nav-item {
+  height: 4.5rem;
+  margin-top: 28px;
+  width: 12rem;
+  text-align: center;
+  font-size: large;
+  margin-left: 5rem;
+  font-variant: small-caps;
+}
+
+.nav-link {
+  padding-top: 13px !important;
+}
+
+.navbar-text {
+  position: absolute;
+  left: 38rem;
+  color: blanchedalmond;
+  font-size: large;
+  font-weight: 400;
+  margin-top: 3rem;
 }
 </style>
 
